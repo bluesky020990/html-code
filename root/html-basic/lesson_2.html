@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2 - HTML Basic</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" type="text/javascript"></script>
+<body>
+<h1>Lesson 2</h1>
+<div class="container">
+    <h2>Description List</h2>
+    <p><b>Description List</b> khác biệt hoàn toàn với order list. Đối với <b>Description List</b>, nó thường được sử dụng trong trường hợp
+        thể hiện 1 danh sách các từ và mô tả của nó. <b>Description List</b> gồm 2 element con bao gồm:
+    </p>
+
+    <ol>
+        <li>Description Term (<b>dt</b>)</li>
+        <li>Description definition (<b>dd</b>)</li>
+    </ol>
+
+    <p>Ví dụ: Ta có 1 bảng thông tin và những mô tả dưới đây</p>
+
+    <ul>
+        <li>Mai Mọi là <i>đồ dở hơi</i></li>
+        <li>Mai Mọi là <i>đồ lười ăn ham chơi</i></li>
+        <li>Mai Mọi là <i>đồ khùng khùng tửng tửng</i></li>
+        <li>Mai Mọi <i>chuyên gia bắt nạt chồng</i></li>
+    </ul>
+
+    <p>Sử dụng Decription List để mô tả thêm thông tin cho các từ in đậm 1 cách rõ ràng</p>
+
+    <dl>
+        <dt>đồ dở hơi</dt>
+        <dd>Tự dưng 10h tối đã kêu chồng đi ngủ</dd>
+        <dt>đồ lười ham ăn ham chơi</dt>
+        <dd>Mỗi bữa ăn có 1 bát mà nói hoài nói mãi không chịu tăng. Tháng nào cũng đi chơi với bạn bỏ mặc chồng ở nhà 1 mình.</dd>
+        <dt>đồ khùng khùng tửng tửng</dt>
+        <dd>Cái này thì khỏi phải nói, nói cũng ko hết, nhiều quá nên ko nhớ</dd>
+        <dt>chuyên gia bắt nạt chồng</dt>
+        <dd>Tuần có 2 lần mà tìm mọi cách trốn tránh nghĩa vụ. Đáng ghét</dd>
+    </dl>
+</div>
+
+<div class="container">
+    <h2>Quotations</h2>
+
+    <h3>Block Quotations</h3>
+    <p>
+        Quotations (<b>blockquote</b> tag, như tên gọi của nó, là 1 element thể hiện sự trích dẫn. Có thể xem ví dụ đơn giản dưới đây:
+    </p>
+    <blockquote>
+        Mai Mọi là đồ dở hơi<br />
+        Mai Mọi là đồ lười ăn ham chơi<br />
+        Mai Mọi là đồ khùng khùng tửng tửng<br />
+        Mai Mọi chuyên gia bắt nạt chồng<br />
+    </blockquote>
+    <p>
+        Trong trường hợp này, block quote sử dụng như 1 khung đặc biệt
+    </p>
+
+    <h3>Inline quotations</h3>
+
+    <p>
+        Inline quotations <b>q</b> tags, được sử dụng khi muốn quote lại content nhưng không mang nó xuống thành block như trên kia. Ví dụ:
+    </p>
+
+    <p>Mọi mọi là <q>đồ điên khùng dở hơi thần kinh</q> chập chập.</p>
+
+    <p>
+        Content sẽ được wrap trong cặp dấu <b>&ldquo;</b> và <b>&rdquo;</b>
+    </p>
+
+    <p>Ngoài ra còn có các element sau:</p>
+
+    <dl>
+        <dt>
+            Tag <b>address</b>
+        </dt>
+        <dd>
+            <p>Tag <b>address</b> dùng để hiển thị địa chỉ. Xem ví dụ:</p>
+            <address>
+                <p>Địa chỉ của Mọi Mọi là trong trái tim B</p>
+            </address>
+        </dd>
+        <dt>Tag <b>cite</b></dt>
+        <dd>
+            <p>Cite dùng để in nghiêng, nói chung là ko có khác biệt với quote lắm . Ví dụ:</p>
+
+            <cite>Trông tớ có vẻ giống tag <b>i</b> lắm không</cite>
+        </dd>
+        <dt>Tag <b>times</b></dt>
+        <dd>
+            <!-- Standard simple date -->
+            <time datetime="2016-01-20" id="times-demo">20 January 2016</time>
+            <button onclick="updateTimes()">Update times</button>
+            <!-- Just year and month -->
+            <!--<time datetime="2016-01">January 2016</time>-->
+            <!--&lt;!&ndash; Just month and day &ndash;&gt;-->
+            <!--<time datetime="01-20">20 January</time>-->
+            <!--&lt;!&ndash; Just time, hours and minutes &ndash;&gt;-->
+            <!--<time datetime="19:30">19:30</time>-->
+            <!--&lt;!&ndash; You can do seconds and milliseconds too! &ndash;&gt;-->
+            <!--<time datetime="19:30:01.856">19:30:01.856</time>-->
+            <!--&lt;!&ndash; Date and time &ndash;&gt;-->
+            <!--<time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>-->
+            <!--&lt;!&ndash; Date and time with timezone offset&ndash;&gt;-->
+            <!--<time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>-->
+            <!--&lt;!&ndash; Calling out a specific week number&ndash;&gt;-->
+            <!--<time datetime="2016-W04">The fourth week of 2016</time>-->
+        </dd>
+    </dl>
+
+
+
+    <p>Giờ thì đến <a href="lesson_3.html">Bài tiếp theo</a> nhé</p>
+
+
+</div>
+
+<script>
+    function updateTimes(){
+        var $timeDemo = $('#times-demo');
+        var dateTime = $timeDemo.attr("datetime");
+
+        console.dir(dateTime + 100);
+
+    }
+</script>
+</body>
+</html>

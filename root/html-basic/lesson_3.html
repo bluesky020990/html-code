@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cau truc co ban cua 1 website</title>
+
+    <style>
+        .header, .navigation, .content, .slider-bar, .footer{
+            border: 1px solid #ccc;
+            background: lightgoldenrodyellow;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container" style="width: 1000px; margin: 0 auto; border: 1px solid #ccc;">
+    <div class="header" style="min-height: 50px; line-height: 50px; text-align: center">
+        Header of the page!
+    </div>
+
+    <div class="navigation" style="min-height: 25px;">
+        <a class="navigation-item" style="display: inline-block;" href="#">Menu</a>
+        <a class="navigation-item" style="display: inline-block" href="#">Category 1</a>
+        <a class="navigation-item" style="display: inline-block" href="#">Category 2</a>
+        <a class="navigation-item" style="display: inline-block" href="#">Category 3</a>
+        <a class="navigation-item" style="display: inline-block" href="./subpage/html-template.html" target="_blank">Xem page mẫu</a>
+    </div>
+
+    <div class="content" style="min-height: 400px; width: 80%; float: left;">
+        <h1>Content Of Page</h1>
+        <p>Thông thường, một website sẽ bao gồm 5 phần: </p>
+        <ol>
+            <li>Header </li>
+            <li>Navigation </li>
+            <li>Content </li>
+            <li>Slider Bar</li>
+            <li>Footer </li>
+        </ol>
+
+        <p>Có nhiều các để định nghĩa style cho từng thằng, tuy nhiên theo format chuẩn thì sẽ như sau:</p>
+
+        <ul>
+            <li><a href="/en-US/docs/Web/HTML/Element/main" title="The HTML <main> element represents the main content of&nbsp;the <body> of a document, portion of a document, or application. The main content area consists of content that is directly related to, or expands upon the central topic of, a document or the central functionality of an application."><code>&lt;main&gt;</code></a> is for content <em>unique to this page. </em>Use <code>&lt;main&gt;</code> only <em>once </em>per page, and put it directly inside <a href="/en-US/docs/Web/HTML/Element/body" title="The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document."><code>&lt;body&gt;</code></a>. Ideally this shouldn't be nested within other elements.</li>
+            <li><a href="/en-US/docs/Web/HTML/Element/article" title="The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry."><code>&lt;article&gt;</code></a> encloses a block of related content that makes sense on its own without the rest of the page (e.g.&nbsp;a single blog post.)</li>
+            <li><a href="/en-US/docs/Web/HTML/Element/section" title="The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."><code>&lt;section&gt;</code></a> is similar to <code>&lt;article&gt;</code>, but it is more for grouping together a single part of the page that constitutes one single piece of functionality (e.g. a mini map, or a set of article headlines and summaries.) It's considered best practice to begin each section with a <a href="/en-US/Learn/HTML/Howto/Set_up_a_proper_title_hierarchy">heading</a>; also note that you can break <code>&lt;article&gt;</code>s up into different <code>&lt;section&gt;</code>s, or <code>&lt;section&gt;</code>s up into different <code>&lt;article&gt;</code>s, depending on the context.</li>
+            <li><a href="/en-US/docs/Web/HTML/Element/aside" title="The HTML <aside> element represents a portion of a document whose content is only indirectly related to the document's main content."><code>&lt;aside&gt;</code></a> contains content that is not directly related to the main content but can provide additional information indirectly related to it (glossary entries, author biography, related links, etc.)</li>
+            <li><a href="/en-US/docs/Web/HTML/Element/header" title="The HTML <header> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also other elements like a logo, a search form, an author name, and so on."><code>&lt;header&gt;</code></a> represents a group of introductory content. If it is a child of <a href="/en-US/docs/Web/HTML/Element/body" title="The HTML <body> Element represents the content of an HTML&nbsp;document. There can be only one <body> element in a document."><code>&lt;body&gt;</code></a> it defines the global header of a webpage, but if it's a child of an <a href="/en-US/docs/Web/HTML/Element/article" title="The HTML <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, or a blog entry."><code>&lt;article&gt;</code></a> or <a href="/en-US/docs/Web/HTML/Element/section" title="The HTML <section> element represents a standalone section — which doesn't have a more specific semantic element to represent it — contained within an HTML document."><code>&lt;section&gt;</code></a> it defines a specific header for that section (try not to confuse this with <a href="/en-US/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Adding_a_title">titles and headings</a>.)</li>
+            <li><a href="/en-US/docs/Web/HTML/Element/nav" title="The HTML <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes."><code>&lt;nav&gt;</code></a> contains the main navigation functionality for the page. Secondary links, etc., would not go in the navigation.</li>
+            <li><a href="/en-US/docs/Web/HTML/Element/footer" title="The HTML <footer> element represents a footer for its nearest sectioning content or sectioning root element. A footer typically contains information about the author of the section, copyright data or links to related documents."><code>&lt;footer&gt;</code></a> represents a group of end content for a page.</li>
+        </ul>
+
+        <p>Ron was backed into a corner by the marauding netherbeasts. Scared, but determined to protect his friends, he raised his wand and prepared to do battle, hoping that his distress call had made it through.</p>
+        <hr>
+        <p>Meanwhile, Harry was sitting at home, staring at his royalty statement and pondering when the next spin off series would come out, when an enchanted distress letter flew through his window and landed in his lap. He read it hasily, and lept to his feet; "better get back to work then", he mused.</p>
+    </div>
+
+    <div class="slider-bar" style="width: 20%; float: right;">
+        <h3>Content of slider bar</h3>
+        <ul>
+            <li>Content 1</li>
+            <li>Content 2</li>
+            <li>Content 3</li>
+            <li>Content 4</li>
+        </ul>
+    </div>
+
+    <div class="footer" style="min-height: 30px; line-height: 30px; text-align: right; clear: both;">
+        Footer of the page!
+    </div>
+</div>
+</body>
+</html>
